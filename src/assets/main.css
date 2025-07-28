@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@theme {
+  --color-accentBlue: #1f3c88;
+  --color-accentGold: #ffc60b;
+  --color-accentGray: #94a3b8;
+  --breakpoint-xs: 425px;
+}
