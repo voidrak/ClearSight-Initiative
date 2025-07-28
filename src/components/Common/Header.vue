@@ -48,7 +48,7 @@ const toggleSidebar = () => {
         </div>
 
         <ul class="list-none flex flex-col items-center mt-16 ml-6 space-y-4 text-2xl">
-          <RouterLink :to="{ name: 'Home' }"> About Us</RouterLink>
+          <RouterLink :to="{ name: 'About' }"> About Us</RouterLink>
           <RouterLink :to="{ name: 'Home' }"> Our Work</RouterLink>
           <RouterLink :to="{ name: 'Home' }"> Why Eyeglasses?</RouterLink>
           <RouterLink :to="{ name: 'Home' }"> Contact Us</RouterLink>
@@ -66,7 +66,7 @@ const toggleSidebar = () => {
       <div class="flex justify-between gap-x-8">
         <Logo class="w-[142px] h-[31px]" />
         <ul class="list-none flex items-center lg:space-x-8 space-x-4 text-lg">
-          <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }"> About Us</RouterLink>
+          <RouterLink class="hover:font-semibold" :to="{ name: 'About' }"> About Us</RouterLink>
           <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }"> Our Work</RouterLink>
           <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }">
             Why Eyeglasses?</RouterLink
