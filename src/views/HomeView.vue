@@ -1,11 +1,17 @@
 <script setup>
-import Header from '@/components/Common/Header.vue'
 import HeroSection from '@/components/HomePage/HeroSection.vue'
+import StatSection from '@/components/HomePage/StatSection.vue'
+import AboutUsSection from '@/components/HomePage/AboutUsSection.vue'
+import TestimonialSection from '@/components/HomePage/TestimonialSection.vue'
+import InvolvedSection from '@/components/HomePage/InvolvedSection.vue'
 </script>
 
 <template>
   <main>
-    <Header />
     <HeroSection />
+    <StatSection />
+    <AboutUsSection />
+    <TestimonialSection />
+    <InvolvedSection />
   </main>
 </template>
