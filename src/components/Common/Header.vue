@@ -67,6 +67,7 @@ const toggleSidebar = () => {
       <div class="flex justify-between gap-x-8">
         <Logo class="w-[142px] h-[31px]" />
         <ul class="list-none flex items-center lg:space-x-8 space-x-4 text-lg">
+          <RouterLink :to="{ name: 'Home' }"> Home</RouterLink>
           <RouterLink class="hover:font-semibold" :to="{ name: 'About' }"> About Us</RouterLink>
           <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }"> Our Work</RouterLink>
           <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }">
