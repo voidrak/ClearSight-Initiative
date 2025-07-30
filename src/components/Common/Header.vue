@@ -48,6 +48,7 @@ const toggleSidebar = () => {
         </div>
 
         <ul class="list-none flex flex-col items-center mt-16 ml-6 space-y-4 text-2xl">
+          <RouterLink :to="{ name: 'Home' }"> Home</RouterLink>
           <RouterLink :to="{ name: 'About' }"> About Us</RouterLink>
           <RouterLink :to="{ name: 'Home' }"> Our Work</RouterLink>
           <RouterLink :to="{ name: 'Home' }"> Why Eyeglasses?</RouterLink>
