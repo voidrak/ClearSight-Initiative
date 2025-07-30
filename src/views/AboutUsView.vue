@@ -121,8 +121,71 @@
           </div>
           <p class="text-gray-700 text-sm max-w-[140px]">Scaling with partners and impact</p>
         </div>
+      </div>
+      <div class="py-10 mt-24 md:py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-20">
+            <h2 class="text-2xl md:text-4xl font-bold text-accentBlue mb-8">
+              <span class="text-accentGold">|</span> Meet our team
+              <span class="text-accentGold">|</span>
+            </h2>
+          </div>
 
-        <!-- Current -->
+          <!-- Team Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+            <!-- Dr. Araya Yirga Asgedo -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
+                <img
+                  src="/public/teamMember1.png"
+                  alt="Dr. Araya Yirga Asgedo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Araya Yirga Asgedo</h3>
+              <p class="text-blue-600 text-sm font-medium">Founder</p>
+            </div>
+
+            <!-- Dr. Helina Hagos -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
+                <img
+                  src="/public/teamMember3.png"
+                  alt="Dr. Helina Hagos"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Helina Hagos</h3>
+              <p class="text-blue-600 text-sm font-medium">Advisor</p>
+            </div>
+
+            <!-- Dr. Amanueal Yfraw -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
+                <img
+                  src="/public/teamMember2.png"
+                  alt="Dr. Amanueal Yfraw"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Amanueal Yfraw</h3>
+              <p class="text-blue-600 text-sm font-medium">collaborator</p>
+            </div>
+
+            <!-- Dr. Tseay Mengesha -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
+                <img
+                  src="/public/teamMember4.png"
+                  alt="Dr. Tseay Mengesha"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Tseay Mengesha</h3>
+              <p class="text-blue-600 text-sm font-medium">collaborators</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
