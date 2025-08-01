@@ -189,4 +189,30 @@
       </div>
     </div>
   </div>
+
+  <!-- Call to Action Section -->
+  <div class="bg-accentBlue py-12 px-4 md:px-0 mt-8">
+    <div class="max-w-4xl mx-auto flex flex-col items-center">
+      <div class="flex w-full justify-between items-center mb-6">
+        <div class="h-18 w-4 bg-accentGold hidden md:block"></div>
+        <h2 class="text-white text-3xl md:text-5xl font-extrabold text-center flex-1">
+          Join our mission to restore<br class="hidden md:block" />
+          sight across Ethiopia.
+        </h2>
+        <div class="h-18 w-4 bg-accentGold hidden md:block"></div>
+      </div>
+      <div class="flex flex-col gap-3 w-full max-w-md mx-auto">
+        <button
+          class="cursor-pointer bg-accentGold text-accentBlue font-semibold text-lg py-2 rounded-md w-full transition hover:bg-yellow-400"
+        >
+          Donate
+        </button>
+        <button
+          class="cursor-pointer border border-white text-white font-medium text-lg py-2 rounded-md w-full transition hover:bg-white hover:text-accentBlue"
+        >
+          Partner With Us
+        </button>
+      </div>
+    </div>
+  </div>
 </template>

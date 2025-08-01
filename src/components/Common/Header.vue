@@ -1,11 +1,27 @@
 <script setup>
 import { ref } from 'vue'
+import { motion } from 'motion-v'
 import Logo from '../icons/Logo.vue'
+
 const isSidebarOpen = ref(false)
+
+const navigationItems = [
+  { name: 'Home', route: 'Home' },
+  { name: 'About Us', route: 'About' },
+  { name: 'Our Work', route: 'Home' },
+  { name: 'Why Eyeglasses?', route: 'Home' },
+  { name: 'Contact Us', route: 'Home' },
+]
+
+const activeLink = ref('Home') // Set default active link
 
 const toggleSidebar = () => {
   isSidebarOpen.value = !isSidebarOpen.value
   console.log(isSidebarOpen.value)
+}
+
+const setActiveLink = (linkName) => {
+  activeLink.value = linkName
 }
 </script>
 
@@ -48,11 +64,14 @@ const toggleSidebar = () => {
         </div>
 
         <ul class="list-none flex flex-col items-center mt-16 ml-6 space-y-4 text-2xl">
-          <RouterLink :to="{ name: 'Home' }"> Home</RouterLink>
-          <RouterLink :to="{ name: 'About' }"> About Us</RouterLink>
-          <RouterLink :to="{ name: 'Home' }"> Our Work</RouterLink>
-          <RouterLink :to="{ name: 'Home' }"> Why Eyeglasses?</RouterLink>
-          <RouterLink :to="{ name: 'Home' }"> Contact Us</RouterLink>
+          <RouterLink
+            v-for="item in navigationItems"
+            :key="item.name"
+            :to="{ name: item.route }"
+            @click="setActiveLink(item.name)"
+          >
+            {{ item.name }}
+          </RouterLink>
         </ul>
         <div class="ml-6 mt-32">
           <h2 class="text-accentGray font-bold">CONTACT INFO</h2>
@@ -62,18 +81,29 @@ const toggleSidebar = () => {
         </div>
       </div>
     </div>
+
     <!-- Desktop Header -->
     <div class="px-4 py-6 hidden md:block">
       <div class="flex justify-between gap-x-8">
         <Logo class="w-[142px] h-[31px]" />
         <ul class="list-none flex items-center lg:space-x-8 space-x-4 text-lg">
-          <RouterLink :to="{ name: 'Home' }"> Home</RouterLink>
-          <RouterLink class="hover:font-semibold" :to="{ name: 'About' }"> About Us</RouterLink>
-          <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }"> Our Work</RouterLink>
-          <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }">
-            Why Eyeglasses?</RouterLink
-          >
-          <RouterLink class="hover:font-semibold" :to="{ name: 'Home' }"> Contact Us</RouterLink>
+          <motion.li v-for="item in navigationItems" :key="item.name" tag="li" class="relative">
+            <RouterLink
+              :to="{ name: item.route }"
+              class="hover:font-semibold transition-all duration-200 block py-2"
+              @click="setActiveLink(item.name)"
+            >
+              {{ item.name }}
+            </RouterLink>
+            <motion.div
+              v-if="item.name === activeLink"
+              class="absolute bottom-0 left-0 right-0 h-0.5 bg-accentGold"
+              layout-id="nav-underline"
+              :initial="{ scaleX: 0 }"
+              :animate="{ scaleX: 1 }"
+              :transition="{ duration: 0.3, ease: 'easeInOut' }"
+            />
+          </motion.li>
         </ul>
         <div class="flex gap-x-2">
           <button
@@ -84,7 +114,7 @@ const toggleSidebar = () => {
           <button
             class="bg-accentBlue hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
           >
-            Donate
+            Partner
           </button>
         </div>
       </div>
