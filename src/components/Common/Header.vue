@@ -47,7 +47,7 @@ const setActiveLink = (linkName) => {
 
       <!--  mobile sidebar -->
       <div
-        class="bg-white border-l border-accentGray absolute top-0 px-4 py-2 right-0 h-full w-screen max-w-[480px]"
+        class="bg-white border-l z-50 border-accentGray absolute top-0 px-4 py-2 right-0 h-full w-screen max-w-[480px]"
         :class="{ hidden: !isSidebarOpen }"
       >
         <div class="flex justify-end">
@@ -68,7 +68,10 @@ const setActiveLink = (linkName) => {
             v-for="item in navigationItems"
             :key="item.name"
             :to="{ name: item.route }"
-            @click="setActiveLink(item.name)"
+            @click="
+              setActiveLink(item.name)
+              toggleSidebar()
+            "
           >
             {{ item.name }}
           </RouterLink>
