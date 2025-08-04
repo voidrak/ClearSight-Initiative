@@ -137,52 +137,52 @@
             <div class="flex flex-col items-center text-center">
               <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
                 <img
-                  src="/public/teamMember1.png"
+                  src="/public/Araya.jpg"
                   alt="Dr. Araya Yirga Asgedo"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Araya Yirga Asgedo</h3>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Araya Yirga</h3>
               <p class="text-blue-600 text-sm font-medium">Founder</p>
             </div>
 
-            <!-- Dr. Helina Hagos -->
+            <!-- Sir Mulu Tekie -->
             <div class="flex flex-col items-center text-center">
               <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
                 <img
-                  src="/public/teamMember3.png"
-                  alt="Dr. Helina Hagos"
+                  src="/public/Mulu.jpg"
+                  alt="Sir Mulu Tekie"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Helina Hagos</h3>
-              <p class="text-blue-600 text-sm font-medium">Advisor</p>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Sir Mulu Tekie</h3>
+              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
             </div>
 
-            <!-- Dr. Amanueal Yfraw -->
+            <!-- Dr. Bereket Zeray -->
             <div class="flex flex-col items-center text-center">
               <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
                 <img
-                  src="/public/teamMember2.png"
-                  alt="Dr. Amanueal Yfraw"
+                  src="/public/Bereket.jpg"
+                  alt="Dr. Bereket Zeray"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Amanueal Yfraw</h3>
-              <p class="text-blue-600 text-sm font-medium">collaborator</p>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Bereket Zeray</h3>
+              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
             </div>
 
-            <!-- Dr. Tseay Mengesha -->
+            <!-- Tr. Assefa Berhe -->
             <div class="flex flex-col items-center text-center">
               <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
                 <img
-                  src="/public/teamMember4.png"
-                  alt="Dr. Tseay Mengesha"
+                  src="/public/Assefa.jpg"
+                  alt="Tr. Assefa Berhe"
                   class="w-full h-full object-cover"
                 />
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Tseay Mengesha</h3>
-              <p class="text-blue-600 text-sm font-medium">collaborators</p>
+              <h3 class="text-lg font-semibold text-gray-900 mb-1">Tr. Assefa Berhe</h3>
+              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
             </div>
           </div>
         </div>

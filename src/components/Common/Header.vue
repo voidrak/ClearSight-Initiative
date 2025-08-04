@@ -23,6 +23,10 @@ const toggleSidebar = () => {
 const setActiveLink = (linkName) => {
   activeLink.value = linkName
 }
+const handleMobileLinkClick = (linkName) => {
+  setActiveLink(linkName)
+  toggleSidebar()
+}
 </script>
 
 <template>
@@ -68,10 +72,7 @@ const setActiveLink = (linkName) => {
             v-for="item in navigationItems"
             :key="item.name"
             :to="{ name: item.route }"
-            @click="
-              setActiveLink(item.name)
-              toggleSidebar()
-            "
+            @click="handleMobileLinkClick(item.name)"
           >
             {{ item.name }}
           </RouterLink>
