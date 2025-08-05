@@ -18,7 +18,7 @@
           <h4 class="font-semibold mb-4">QUICK LINKS</h4>
           <ul class="space-y-2 text-sm text-gray-600">
             <li><a href="#" class="hover:text-accentGold">Home</a></li>
-            <li><a href="#" class="hover:text-accentGold">About</a></li>
+            <li><a href="/about" class="hover:text-accentGold">About</a></li>
             <li><a href="#" class="hover:text-accentGold">Our Work</a></li>
             <li><a href="#" class="hover:text-accentGold">Impact</a></li>
             <li><a href="#" class="hover:text-accentGold">Get Involved</a></li>
@@ -45,11 +45,12 @@
             >
               Partner With Us
             </button>
-            <button
-              class="w-full py-2 px-4 bg-accentGold text-white rounded text-sm hover:bg-yellow-500"
+            <RouterLink
+              :to="{ name: 'Donate' }"
+              class="w-full py-2 px-4 bg-accentGold flex text-white justify-center items-center rounded text-sm hover:bg-yellow-500"
             >
               Donate
-            </button>
+            </RouterLink>
           </div>
         </div>
       </div>

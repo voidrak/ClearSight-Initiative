@@ -110,16 +110,17 @@ const handleMobileLinkClick = (linkName) => {
           </motion.li>
         </ul>
         <div class="flex gap-x-2">
-          <button
-            class="bg-accentGold hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
+          <RouterLink
+            :to="{ name: 'Donate' }"
+            class="bg-accentGold flex items-center hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
           >
-            Donate
-          </button>
-          <button
+            Donate Us
+          </RouterLink>
+          <!-- <button
             class="bg-accentBlue hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
           >
             Partner
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

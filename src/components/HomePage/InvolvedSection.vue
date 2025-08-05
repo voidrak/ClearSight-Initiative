@@ -10,8 +10,8 @@
         You can help us restore sight across Ethiopia.
       </p>
       <div class="text-base md:text-lg leading-relaxed">
-        <span class="font-semibold">Donate</span> to put glasses in someone's hands,
-        <span class="font-semibold">Partner</span> to expand our reach,
+        <a href="/donate-us" class="hover:text-accentGold font-semibold">Donate</a> to put glasses
+        in someone's hands, <span class="font-semibold">Partner</span> to expand our reach,
         <span class="font-semibold">Share our mission</span> to bring vision to all
       </div>
     </div>

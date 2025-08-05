@@ -16,11 +16,12 @@ import HeroImage from '@/../public/heroImage.webp'
       ClearSight Initiative provides affordable reading glasses to underserved communities across
       Ethiopia empowering people to see clearly, work confidently, and live independently.
     </p>
-    <button
-      class="px-6 md:px-8 w-fit py-2 ml-4 md:ml-28 mt-6 md:mt-10 bg-accentGold pointer-cursor hover:bg-yellow-500 text-white rounded"
+    <RouterLink
+      :to="{ name: 'Donate' }"
+      class="px-6 md:px-8 w-fit py-2 ml-4 md:ml-28 flex items-center mt-6 md:mt-10 bg-accentGold pointer-cursor hover:bg-yellow-500 text-white rounded"
     >
-      Donate
-    </button>
+      Donate Us
+    </RouterLink>
   </div>
 </template>
 
