@@ -65,5 +65,60 @@
         style="background-image: url('/public/donation-hero-bg.webp')"
       ></div>
     </div>
+
+    <!-- Bank Transfer Details Section -->
+    <div class="bg-gray-50 py-12 sm:py-16 xl:mt-28 md:py-20 px-4 sm:px-8 md:px-16">
+      <div class="max-w-6xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-8 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <span class="text-accentGold">|</span> Bank Transfer Details
+            <span class="text-accentGold">|</span>
+          </h2>
+          <p class="text-base sm:text-lg text-accentBlue underline">
+            You can donate directly through one of our local bank accounts:
+          </p>
+        </div>
+
+        <!-- Bank Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+          <!-- Commercial Bank of Ethiopia -->
+          <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
+            <h3 class="font-bold text-lg sm:text-xl mb-3">Commercial Bank of Ethiopia</h3>
+            <div class="space-y-1 sm:space-y-2">
+              <p class="text-sm sm:text-base">Account Number: 1000456789012</p>
+              <p class="text-sm sm:text-base">SWIFT Code: CBETETAA</p>
+            </div>
+          </div>
+
+          <!-- Dashen Bank -->
+          <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
+            <h3 class="font-bold text-lg sm:text-xl mb-3">Dashen Bank</h3>
+            <div class="space-y-1 sm:space-y-2">
+              <p class="text-sm sm:text-base">Account Number: 2000345678901</p>
+              <p class="text-sm sm:text-base">SWIFT Code: DASHETAA</p>
+            </div>
+          </div>
+
+          <!-- Awash Bank -->
+          <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
+            <h3 class="font-bold text-lg sm:text-xl mb-3">Awash Bank</h3>
+            <div class="space-y-1 sm:space-y-2">
+              <p class="text-sm sm:text-base">Account Number: 3000123456789</p>
+              <p class="text-sm sm:text-base">SWIFT Code: AWAHETAA</p>
+            </div>
+          </div>
+
+          <!-- Bank of Abyssinia -->
+          <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
+            <h3 class="font-bold text-lg sm:text-xl mb-3">Bank of Abyssinia</h3>
+            <div class="space-y-1 sm:space-y-2">
+              <p class="text-sm sm:text-base">Account Number: 4000987654321</p>
+              <p class="text-sm sm:text-base">SWIFT Code: ABOCETAA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
