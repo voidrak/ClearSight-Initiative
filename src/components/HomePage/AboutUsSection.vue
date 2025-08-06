@@ -78,7 +78,7 @@ const cardVariants = {
       </motion.div>
       <motion.div class="flex-1 order-1 md:order-2" :variants="imageVariants">
         <img
-          src="/public/heroImage.webp"
+          src="/public/whyVisionImage.webp"
           alt="Person with glasses reading"
           class="w-full rounded-lg shadow-lg"
         />
