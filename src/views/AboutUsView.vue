@@ -41,7 +41,7 @@
       </div>
       <div class="flex-1 order-1 md:order-1">
         <img
-          src="/public/missionImage.png"
+          src="/public/missionImage.jpg"
           alt="Community outreach"
           class="w-full rounded-lg shadow-lg"
         />
@@ -75,6 +75,7 @@
           >
             Pilot Launched
           </div>
+          0
           <p class="text-gray-700 text-sm max-w-[140px]">Started in Tigray region</p>
         </div>
 
