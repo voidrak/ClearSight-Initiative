@@ -78,7 +78,7 @@ const cardVariants = {
       </motion.div>
       <motion.div class="flex-1 order-1 md:order-2" :variants="imageVariants">
         <img
-          src="/public/whyVisionImage.webp"
+          src="/public/whyVisionImage.avif"
           alt="Person with glasses reading"
           class="w-full rounded-lg shadow-lg"
         />
@@ -97,7 +97,7 @@ const cardVariants = {
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
       <motion.div class="flex-1" :variants="imageVariants">
         <img
-          src="/public/OurSolutionImage.webp"
+          src="/public/OurSolutionImage.avif"
           alt="Person getting glasses fitted"
           class="w-full rounded-lg shadow-lg"
         />

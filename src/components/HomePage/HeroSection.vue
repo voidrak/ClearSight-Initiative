@@ -9,7 +9,7 @@ import HeroImage from '@/../public/homepage_heroSection.webp'
     :style="`background-image: url('${HeroImage}')`"
   >
     <!-- Dark overlay -->
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
 
     <!-- Content with higher z-index -->
     <div class="relative z-10">
