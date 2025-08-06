@@ -86,7 +86,7 @@
           <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
             <h3 class="font-bold text-lg sm:text-xl mb-3">Commercial Bank of Ethiopia</h3>
             <div class="space-y-1 sm:space-y-2">
-              <p class="text-sm sm:text-base">Account Number: 1000456789012</p>
+              <p class="text-sm sm:text-base">Account Number: 1000012221057</p>
               <p class="text-sm sm:text-base">SWIFT Code: CBETETAA</p>
             </div>
           </div>
@@ -102,10 +102,10 @@
 
           <!-- Awash Bank -->
           <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
-            <h3 class="font-bold text-lg sm:text-xl mb-3">Awash Bank</h3>
+            <h3 class="font-bold text-lg sm:text-xl mb-3">Lion Bank</h3>
             <div class="space-y-1 sm:space-y-2">
-              <p class="text-sm sm:text-base">Account Number: 3000123456789</p>
-              <p class="text-sm sm:text-base">SWIFT Code: AWAHETAA</p>
+              <p class="text-sm sm:text-base">Account Number: 778400003561</p>
+              <p class="text-sm sm:text-base">SWIFT Code: LIBSETAA</p>
             </div>
           </div>
 
