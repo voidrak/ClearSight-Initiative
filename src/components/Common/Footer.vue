@@ -19,7 +19,7 @@
           <ul class="space-y-2 text-sm text-gray-600">
             <li><a href="#" class="hover:text-accentGold">Home</a></li>
             <li><a href="/about" class="hover:text-accentGold">About</a></li>
-            <li><a href="#" class="hover:text-accentGold">Our Work</a></li>
+            <li><a href="/impact" class="hover:text-accentGold">Impact</a></li>
             <li><a href="#" class="hover:text-accentGold">Impact</a></li>
             <li><a href="#" class="hover:text-accentGold">Get Involved</a></li>
           </ul>

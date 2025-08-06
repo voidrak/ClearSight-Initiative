@@ -8,7 +8,7 @@ const isSidebarOpen = ref(false)
 const navigationItems = [
   { name: 'Home', route: 'Home' },
   { name: 'About Us', route: 'About' },
-  { name: 'Our Work', route: 'Home' },
+  { name: 'Impact', route: 'Impact' },
   { name: 'Why Eyeglasses?', route: 'Home' },
   { name: 'Contact Us', route: 'Home' },
 ]

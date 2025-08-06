@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'Donate',
       component: () => import('../views/DonationView.vue'),
     },
+    {
+      path: '/impact',
+      name: 'Impact',
+      component: () => import('../views/ImpactPage.vue'),
+    },
   ],
 })
 
