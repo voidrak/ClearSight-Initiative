@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'Impact',
       component: () => import('../views/ImpactPage.vue'),
     },
+    {
+      path: '/contact-us',
+      name: 'Contact',
+      component: () => import('../views/ContactUsPage.vue'),
+    },
   ],
 })
 

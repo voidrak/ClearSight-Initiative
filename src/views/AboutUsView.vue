@@ -203,16 +203,18 @@
         <div class="h-18 w-4 bg-accentGold hidden md:block"></div>
       </div>
       <div class="flex flex-col gap-3 w-full max-w-md mx-auto">
-        <button
-          class="cursor-pointer bg-accentGold text-accentBlue font-semibold text-lg py-2 rounded-md w-full transition hover:bg-yellow-400"
+        <RouterLink
+          :to="{ name: 'Donate' }"
+          class="cursor-pointer text-center bg-accentGold text-accentBlue font-semibold text-lg py-2 rounded-md w-full transition hover:bg-yellow-400"
         >
           Donate
-        </button>
-        <button
-          class="cursor-pointer border border-white text-white font-medium text-lg py-2 rounded-md w-full transition hover:bg-white hover:text-accentBlue"
+        </RouterLink>
+        <RouterLink
+          :to="{ name: 'Contact' }"
+          class="cursor-pointer text-center border border-white text-white font-medium text-lg py-2 rounded-md w-full transition hover:bg-white hover:text-accentBlue"
         >
           Partner With Us
-        </button>
+        </RouterLink>
       </div>
     </div>
   </div>

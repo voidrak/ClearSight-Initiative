@@ -9,8 +9,8 @@ const navigationItems = [
   { name: 'Home', route: 'Home' },
   { name: 'About Us', route: 'About' },
   { name: 'Impact', route: 'Impact' },
-  { name: 'Why Eyeglasses?', route: 'Home' },
-  { name: 'Contact Us', route: 'Home' },
+  // { name: 'Why Eyeglasses?', route: 'Home' },
+  { name: 'Contact Us', route: 'Contact' },
 ]
 
 const activeLink = ref('Home') // Set default active link
@@ -40,7 +40,7 @@ watch(isSidebarOpen, (open) => {
 <template>
   <header>
     <!-- Mobile Header -->
-    <div class="md:hidden z-[999] px-2 py-2 flex justify-between items-center">
+    <div class="lg:hidden z-[999] px-2 py-2 flex justify-between items-center">
       <div class="flex justify-between">
         <Logo class="w-[142px] h-[31px]" />
       </div>
@@ -102,8 +102,8 @@ watch(isSidebarOpen, (open) => {
     </div>
 
     <!-- Desktop Header -->
-    <div class="px-4 py-6 hidden md:block">
-      <div class="flex justify-between gap-x-8">
+    <div class="px-4 py-6 hidden lg:block xl:w-[80%] 2xl:w-[90%] mx-auto">
+      <div class="flex justify-between items-center gap-x-8">
         <Logo class="w-[142px] h-[31px]" />
         <ul class="list-none flex items-center lg:space-x-8 space-x-4 text-lg">
           <motion.li v-for="item in navigationItems" :key="item.name" tag="li" class="relative">
@@ -131,11 +131,12 @@ watch(isSidebarOpen, (open) => {
           >
             Donate Us
           </RouterLink>
-          <!-- <button
-            class="bg-accentBlue hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
+          <RouterLink
+            :to="{ name: 'Contact' }"
+            class="bg-accentBlue hover:bg-accentBlue/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
           >
-            Partner
-          </button> -->
+            Contact Us
+          </RouterLink>
         </div>
       </div>
     </div>

@@ -20,8 +20,7 @@
             <li><a href="#" class="hover:text-accentGold">Home</a></li>
             <li><a href="/about" class="hover:text-accentGold">About</a></li>
             <li><a href="/impact" class="hover:text-accentGold">Impact</a></li>
-            <li><a href="#" class="hover:text-accentGold">Impact</a></li>
-            <li><a href="#" class="hover:text-accentGold">Get Involved</a></li>
+            <li><a href="/contact-us" class="hover:text-accentGold">Contact Us</a></li>
           </ul>
         </div>
 
@@ -32,13 +31,12 @@
             <p>Ayda Sub-city, Ethiovitian<br />Street, Mekelle, Ethiopia</p>
             <p class="text-blue-600">clearsight2017@gmail.com</p>
             <p>+251 911 037 207</p>
-            <p>Social media icons</p>
           </div>
         </div>
 
         <!-- Newsletter -->
         <div>
-          <h4 class="font-semibold mb-4">NEWSLETTER</h4>
+          <h4 class="font-semibold mb-4">Get In Touch</h4>
           <div class="space-y-3">
             <button
               class="w-full py-2 px-4 border border-gray-300 rounded text-sm hover:bg-gray-50"
