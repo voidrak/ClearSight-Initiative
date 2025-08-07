@@ -1,7 +1,48 @@
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue'
+import { animate, stagger, inView } from 'motion-v'
+
+onMounted(() => {
+  inView(
+    '.model-cards-container',
+    (element) => {
+      animate(
+        '.model-card',
+        {
+          opacity: 1,
+          y: [50, 0],
+        },
+        {
+          delay: stagger(0.3),
+          duration: 0.9,
+          easing: [0.17, 0.55, 0.55, 1],
+        },
+      )
+
+      return () => {
+        animate(
+          '.model-card',
+          {
+            opacity: 0,
+            y: 50,
+          },
+          {
+            delay: stagger(0.1),
+            duration: 0.3,
+          },
+        )
+      }
+    },
+    {
+      amount: 0.6,
+      once: true,
+    },
+  )
+})
+</script>
 
 <template>
-  <div class="mt-16 sm:mt-20 md:mt-24 lg:mt-28">
+  <div class="mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mb-16">
     <div class="flex items-center justify-center mb-8">
       <div class="text-center px-4 sm:px-8 md:px-16 mx-auto">
         <!-- Title -->
@@ -97,9 +138,11 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto model-cards-container">
           <!-- Urban Model -->
-          <div class="bg-accentBlue rounded-2xl p-8 text-white text-center">
+          <div
+            class="bg-accentBlue rounded-2xl p-8 text-white text-center model-card translate-y-[50px] opacity-0"
+          >
             <div
               class="w-16 h-16 mx-auto mb-6 border-2 border-dashed border-accentGold rounded-full flex items-center justify-center"
             >
@@ -113,7 +156,9 @@
           </div>
 
           <!-- Rural Model -->
-          <div class="bg-accentBlue rounded-2xl p-8 text-white text-center">
+          <div
+            class="bg-accentBlue rounded-2xl p-8 text-white text-center model-card translate-y-[50px] opacity-0"
+          >
             <div
               class="w-16 h-16 mx-auto mb-6 border-2 border-dashed border-accentGold rounded-full flex items-center justify-center"
             >
@@ -127,7 +172,9 @@
           </div>
 
           <!-- Access Points -->
-          <div class="bg-accentBlue rounded-2xl p-8 text-white text-center">
+          <div
+            class="bg-accentBlue rounded-2xl p-8 text-white text-center model-card translate-y-[50px] opacity-0"
+          >
             <div
               class="w-16 h-16 mx-auto mb-6 border-2 border-dashed border-accentGold rounded-full flex items-center justify-center"
             >
