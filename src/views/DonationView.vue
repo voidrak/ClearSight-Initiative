@@ -7,7 +7,7 @@
     >
       <!-- Hero Text Section -->
       <div
-        class="flex-1 text-white z-50 min-[1170px]:ml-48 min-[1170px]:mb-0 text-center min-[1170px]:text-left"
+        class="flex-1 text-white z-10 min-[1170px]:ml-48 min-[1170px]:mb-0 text-center min-[1170px]:text-left"
       >
         <h1
           class="text-3xl sm:text-4xl md:text-5xl min-[1170px]:text-6xl 2xl:text-7xl font-bold mb-4 min-[1170px]:mb-6 leading-tight"
@@ -23,7 +23,7 @@
       </div>
 
       <!-- Donation Card Section -->
-      <div class="flex-1 max-w-sm mx-auto min-[1170px]:mx-0 min-[1170px]:mr-48 z-50 w-full">
+      <div class="flex-1 max-w-sm mx-auto min-[1170px]:mx-0 min-[1170px]:mr-48 z-10 w-full">
         <div class="bg-accentBlue rounded-2xl p-4 sm:p-6 shadow-2xl">
           <!-- Header with Image -->
           <div class="relative mb-3">

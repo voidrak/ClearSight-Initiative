@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { motion } from 'motion-v'
 import Logo from '../icons/Logo.vue'
 
@@ -27,12 +27,20 @@ const handleMobileLinkClick = (linkName) => {
   setActiveLink(linkName)
   toggleSidebar()
 }
+
+watch(isSidebarOpen, (open) => {
+  if (open) {
+    document.body.classList.add('overflow-hidden')
+  } else {
+    document.body.classList.remove('overflow-hidden')
+  }
+})
 </script>
 
 <template>
   <header>
     <!-- Mobile Header -->
-    <div class="md:hidden px-2 py-2 flex justify-between items-center">
+    <div class="md:hidden z-[999] px-2 py-2 flex justify-between items-center">
       <div class="flex justify-between">
         <Logo class="w-[142px] h-[31px]" />
       </div>
@@ -51,7 +59,7 @@ const handleMobileLinkClick = (linkName) => {
 
       <!--  mobile sidebar -->
       <div
-        class="bg-white border-l z-50 border-accentGray absolute top-0 px-4 py-2 right-0 h-full w-screen max-w-[480px]"
+        class="bg-white border-l z-50 min-h-screen border-accentGray absolute top-0 px-4 py-2 right-0 h-full w-screen max-w-[480px]"
         :class="{ hidden: !isSidebarOpen }"
       >
         <div class="flex justify-end">
@@ -77,7 +85,14 @@ const handleMobileLinkClick = (linkName) => {
             {{ item.name }}
           </RouterLink>
         </ul>
-        <div class="ml-6 mt-32">
+        <RouterLink
+          :to="{ name: 'Donate' }"
+          @click="toggleSidebar"
+          class="bg-accentGold mx-auto mt-8 flex items-center hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
+        >
+          Donate Us
+        </RouterLink>
+        <div class="ml-6 mt-16">
           <h2 class="text-accentGray font-bold">CONTACT INFO</h2>
           <p class="font-light mt-2">Ayder Sub-city,</p>
           <p class="font-light">EthioWitten Street,</p>
