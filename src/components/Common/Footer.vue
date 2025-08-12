@@ -38,11 +38,12 @@
         <div>
           <h4 class="font-semibold mb-4">Get In Touch</h4>
           <div class="space-y-3">
-            <button
-              class="w-full py-2 px-4 border border-gray-300 rounded text-sm hover:bg-gray-50"
+            <RouterLink
+              :to="{ name: 'Contact' }"
+              class="w-full py-2 px-4 border block text-center border-gray-300 rounded text-sm hover:bg-gray-50"
             >
               Partner With Us
-            </button>
+            </RouterLink>
             <RouterLink
               :to="{ name: 'Donate' }"
               class="w-full py-2 px-4 bg-accentGold flex text-white justify-center items-center rounded text-sm hover:bg-yellow-500"

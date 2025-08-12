@@ -3,6 +3,10 @@ import { onMounted } from 'vue'
 import { animate, stagger, inView } from 'motion-v'
 
 onMounted(() => {
+  window.scrollTo(0, 0)
+})
+
+onMounted(() => {
   inView(
     '.model-cards-container',
     (element) => {

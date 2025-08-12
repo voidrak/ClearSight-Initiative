@@ -5,3 +5,7 @@
   --color-accentGray: #94a3b8;
   --breakpoint-xs: 425px;
 }
+
+body {
+  scroll-behavior: smooth;
+}

@@ -1,3 +1,10 @@
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
+</script>
 <template>
   <div class="min-h-screen w-full relative flex items-center justify-center py-8 px-2">
     <!-- Radial Gradient Background from Bottom -->

@@ -4,6 +4,11 @@ import StatSection from '@/components/HomePage/StatSection.vue'
 import AboutUsSection from '@/components/HomePage/AboutUsSection.vue'
 import TestimonialSection from '@/components/HomePage/TestimonialSection.vue'
 import InvolvedSection from '@/components/HomePage/InvolvedSection.vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <template>

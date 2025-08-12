@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
+</script>
 
 <template>
   <div class="mt-16 sm:mt-20 md:mt-24 min-[1170px]:mt-28 pb-32">
