@@ -152,50 +152,74 @@ onMounted(() => {
             glasses.
           </p>
         </div>
-
-        <!-- Two TikTok Videos Side by Side -->
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <!-- Video 1 -->
-          <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+        <!-- Video 3 - Watch Repair Guy -->
+        <div class="md:col-span-2 max-w-sm mx-auto mb-12">
+          <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
             <div class="aspect-[9/16] w-full">
               <video
                 class="w-full h-full object-cover"
                 controls
-                poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759294244/video-temp1_iffl6f.png"
+                poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759304801/8922b68a-9ae2-4fd6-8ff8-2e5c057b49a5.png"
               >
                 <source
-                  src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759293242/WhatsApp_Video_2025-09-30_at_19.22.52_8e78cbc9_bcs43q.mp4"
+                  src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759304775/video_2025-10-01_10-44-58_y2qsvl.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
               </video>
             </div>
+          </div>
+          <p class="text-center font-bold text-gray-700 text-sm md:text-base">
+            "Watch repair technician returns to his craft after receiving reading glasses from
+            ClearSight"
+          </p>
+        </div>
+
+        <!-- Two TikTok Videos Side by Side -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <!-- Video 1 -->
+          <div>
+            <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
+              <div class="aspect-[9/16] w-full">
+                <video
+                  class="w-full h-full object-cover"
+                  controls
+                  poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759294244/video-temp1_iffl6f.png"
+                >
+                  <source
+                    src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759293242/WhatsApp_Video_2025-09-30_at_19.22.52_8e78cbc9_bcs43q.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <p class="text-center text-gray-700 text-sm md:text-base">
+              Community members share their experience with ClearSight reading glasses
+            </p>
           </div>
 
           <!-- Video 2 -->
-          <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
-            <div class="aspect-[9/16] w-full">
-              <video
-                class="w-full h-full object-cover"
-                controls
-                poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759294244/video-temp2_viqfjf.png"
-              >
-                <source
-                  src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759293244/WhatsApp_Video_2025-09-30_at_19.23.07_852bda54_qv8un3.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+          <div>
+            <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
+              <div class="aspect-[9/16] w-full">
+                <video
+                  class="w-full h-full object-cover"
+                  controls
+                  poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759294244/video-temp2_viqfjf.png"
+                >
+                  <source
+                    src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759293244/WhatsApp_Video_2025-09-30_at_19.23.07_852bda54_qv8un3.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
+            <p class="text-center text-gray-700 text-sm md:text-base">
+              Local artisan receives reading glasses from ClearSight
+            </p>
           </div>
-        </div>
-
-        <div class="text-center mt-8">
-          <p class="text-gray-600 italic">
-            "These glasses have given me my independence back. I can read again, work again, and
-            feel confident in my daily life."
-          </p>
-          <p class="text-accentBlue font-semibold mt-2">- ClearSight Beneficiaries</p>
         </div>
       </div>
     </div>
