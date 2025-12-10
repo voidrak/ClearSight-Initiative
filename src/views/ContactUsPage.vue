@@ -35,8 +35,10 @@ onMounted(() => {
           </svg>
           <div>
             <span class="font-semibold text-accentBlue">Email:</span>
-            <a href="mailto:clearsight2017@gmail.com" class="ml-1 hover:underline text-blue-600"
-              >clearsight2017@gmail.com</a
+            <a
+              href="mailto:restoringvision@clearsightinitiative.org"
+              class="ml-1 hover:underline text-blue-600"
+              >restoringvision@clearsightinitiative.org</a
             >
           </div>
         </div>

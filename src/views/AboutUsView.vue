@@ -47,7 +47,7 @@ onMounted(() => {
       </div>
       <div class="flex-1 order-1 md:order-1">
         <img
-          src="/public/missionImage.jpg"
+          src="/public/whyVisionImage.avif"
           alt="Community outreach"
           class="w-full rounded-lg shadow-lg"
         />

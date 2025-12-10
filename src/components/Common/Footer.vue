@@ -29,7 +29,7 @@
           <h4 class="font-semibold mb-4">CONTACT INFO</h4>
           <div class="space-y-2 text-sm text-gray-600">
             <p>Ayda Sub-city, Ethiovitian<br />Street, Mekelle, Ethiopia</p>
-            <p class="text-blue-600">clearsight2017@gmail.com</p>
+            <p class="text-blue-600">restoringvision@clearsightinitiative.org</p>
             <p>+251 911 037 207</p>
           </div>
         </div>
