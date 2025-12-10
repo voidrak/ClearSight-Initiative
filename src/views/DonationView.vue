@@ -110,7 +110,7 @@ onMounted(() => {
           <div class="bg-accentBlue rounded-xl p-4 sm:p-6 text-white shadow-lg">
             <h3 class="font-bold text-lg sm:text-xl mb-3">Lion Bank</h3>
             <div class="space-y-1 sm:space-y-2">
-              <p class="text-sm sm:text-base">Account Number: 778400003561</p>
+              <p class="text-sm sm:text-base">Account Number: 02112876933-32</p>
               <p class="text-sm sm:text-base">SWIFT Code: LIBSETAA</p>
             </div>
           </div>
