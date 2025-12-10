@@ -59,6 +59,17 @@
         <p class="text-sm text-gray-600">
           © Copyright 2025. All Rights Reserved by <span class="font-semibold">ClearSight</span>
         </p>
+
+        <p class="">
+          Made By
+          <a
+            href="https://github.com/voidrak"
+            target="_blank"
+            class="font-semibold text-accentGold hover:underline"
+            >RAK</a
+          >
+          with ❤️
+        </p>
       </div>
     </div>
   </footer>
