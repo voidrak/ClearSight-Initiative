@@ -1,6 +1,6 @@
 <script setup>
 // import HeroImage from '@/../public/heroImage.webp'
-import HeroImage from '@/../public/homepage_heroSection.webp'
+import HeroImage from '@/../public/hero_image.webp'
 </script>
 
 <template>
