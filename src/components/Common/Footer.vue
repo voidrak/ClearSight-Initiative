@@ -27,9 +27,15 @@
         <!-- Contact Info -->
         <div>
           <h4 class="font-semibold mb-4">CONTACT INFO</h4>
-          <div class="space-y-2 text-sm text-gray-600">
-            <p>Ayda Sub-city, Ethiovitian<br />Street, Mekelle, Ethiopia</p>
-            <p class="text-blue-600">restoringvision@clearsightinitiative.org</p>
+          <div class="space-y-1 text-sm text-gray-600">
+            <p>Ayda Sub-city, Ethiovitian</p>
+            <p>Street, Mekelle, Ethiopia</p>
+            <a
+              href="mailto:correctingagingeyes@clearsightInitiative.org
+"
+              class="ml-1 hover:underline hover:text-blue-600 block"
+              >mail: correctingagingeyes
+            </a>
             <p>+251 911 037 207</p>
           </div>
         </div>
@@ -63,7 +69,7 @@
         <p class="">
           Made By
           <a
-            href="https://github.com/voidrak"
+            href="https://linktr.ee/nahomrak"
             target="_blank"
             class="font-semibold text-accentGold hover:underline"
             >RAK</a

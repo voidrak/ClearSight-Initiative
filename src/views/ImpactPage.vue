@@ -1,6 +1,12 @@
 <script setup>
 import { onMounted } from 'vue'
 import { animate, stagger, inView } from 'motion-v'
+import KpiGrid from '@/components/metrics/KpiGrid.vue'
+import OperationalMetricsTable from '@/components/tables/OperationalMetricsTable.vue'
+import GenderPieChart from '@/components/charts/GenderPieChart.vue'
+import ChannelBarChart from '@/components/charts/ChannelBarChart.vue'
+import AgeDistributionChart from '@/components/charts/AgeDistributionChart.vue'
+import Timeline from '@/components/Timeline/Timeline.vue'
 
 onMounted(() => {
   window.scrollTo(0, 0)
@@ -137,31 +143,31 @@ onMounted(() => {
             glasses.
           </p>
         </div>
-        <!-- Video 3 - Watch Repair Guy -->
-        <div class="md:col-span-2 max-w-sm mx-auto mb-12">
-          <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
-            <div class="aspect-[9/16] w-full">
-              <video
-                class="w-full h-full object-cover"
-                controls
-                poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759304801/8922b68a-9ae2-4fd6-8ff8-2e5c057b49a5.png"
-              >
-                <source
-                  src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759304775/video_2025-10-01_10-44-58_y2qsvl.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-3xl xl:max-w-5xl mx-auto">
+          <!-- Video 3 - Watch Repair Guy -->
+          <div class="max-w-sm mx-auto mb-12">
+            <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
+              <div class="aspect-[9/16] w-full">
+                <video
+                  class="w-full h-full object-cover"
+                  controls
+                  poster="https://res.cloudinary.com/dqxy77qks/image/upload/v1759304801/8922b68a-9ae2-4fd6-8ff8-2e5c057b49a5.png"
+                >
+                  <source
+                    src="https://res.cloudinary.com/dqxy77qks/video/upload/v1759304775/video_2025-10-01_10-44-58_y2qsvl.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
+            <p class="text-center font-bold text-gray-700 text-sm md:text-base">
+              "Watch repair technician returns to his craft after receiving reading glasses from
+              ClearSight"
+            </p>
           </div>
-          <p class="text-center font-bold text-gray-700 text-sm md:text-base">
-            "Watch repair technician returns to his craft after receiving reading glasses from
-            ClearSight"
-          </p>
-        </div>
 
-        <!-- Two TikTok Videos Side by Side -->
-        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <!-- Two TikTok Videos Side by Side -->
           <!-- Video 1 -->
           <div>
             <div class="relative bg-gray-100 rounded-2xl overflow-hidden shadow-lg mb-4">
@@ -302,6 +308,74 @@ onMounted(() => {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- KPI Metrics Section -->
+    <div class="bg-white py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl border-x-8 px-4 border-accentGold w-fit mx-auto text-center sm:text-3xl font-bold text-accentBlue mb-4"
+          >
+            Key Performance Indicators
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Tracking our progress in delivering affordable reading glasses and transforming lives.
+          </p>
+        </div>
+        <KpiGrid />
+      </div>
+    </div>
+
+    <!-- Operational Metrics Section -->
+    <div class="bg-gray-50 py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl border-x-8 px-4 border-accentGold w-fit mx-auto text-center sm:text-3xl font-bold text-accentBlue mb-4"
+          >
+            Operational Metrics
+          </h2>
+        </div>
+        <OperationalMetricsTable />
+      </div>
+    </div>
+
+    <!-- Distribution Breakdown Section -->
+    <div class="bg-white py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl border-x-8 px-4 border-accentGold w-fit mx-auto text-center sm:text-3xl font-bold text-accentBlue mb-4"
+          >
+            Distribution Breakdown
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          <GenderPieChart />
+          <ChannelBarChart />
+        </div>
+        <div class="grid grid-cols-1">
+          <AgeDistributionChart />
+        </div>
+      </div>
+    </div>
+
+    <!-- Growth Projection Timeline Section -->
+    <div class="bg-gray-50 py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl border-x-8 px-4 border-accentGold w-fit mx-auto text-center sm:text-3xl font-bold text-accentBlue mb-4"
+          >
+            Growth Projection
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Our roadmap to reaching 100,000 beneficiaries by 2030
+          </p>
+        </div>
+        <Timeline />
       </div>
     </div>
   </div>

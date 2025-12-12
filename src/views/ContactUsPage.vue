@@ -36,10 +36,11 @@ onMounted(() => {
           <div>
             <span class="font-semibold text-accentBlue">Email:</span>
             <a
-              href="mailto:restoringvision@clearsightinitiative.org"
+              href="mailto:correctingagingeyes@clearsightInitiative.org
+"
               class="ml-1 hover:underline text-blue-600"
-              >restoringvision@clearsightinitiative.org</a
-            >
+              >correctingagingeyes@clearsightInitiative.org
+            </a>
           </div>
         </div>
         <div class="flex items-center gap-4">
