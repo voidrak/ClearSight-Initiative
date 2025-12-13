@@ -1,88 +1,65 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { animate, stagger, inView } from 'motion-v'
+import { ref, onMounted } from "vue";
+import { animate, stagger, inView } from "motion-v";
 
 const events = ref([
   {
     id: 1,
-    image: '/1.webp',
-    title: 'Eye Examination & Distribution',
-    description: 'Community members receiving vision tests and reading glasses',
+    image: "/1.webp",
+    title: "Eye Examination & Distribution",
+    description: "Community members receiving vision tests and reading glasses",
   },
   {
     id: 2,
-    image: '/2.webp',
-    title: 'Reading Test Session',
-    description: 'Testing reading glasses with local community members',
+    image: "/2.webp",
+    title: "Reading Test Session",
+    description: "Testing reading glasses with local community members",
   },
   {
     id: 3,
-    image: '/3.webp',
-    title: 'Teacher Receiving Glasses',
-    description: 'Educator trying on reading glasses for the first time',
+    image: "/3.webp",
+    title: "Teacher Receiving Glasses",
+    description: "Educator trying on reading glasses for the first time",
   },
   {
     id: 4,
-    image: '/4.webp',
-    title: 'Community Consultation',
-    description: 'Providing guidance on proper glasses selection',
+    image: "/4.webp",
+    title: "Community Consultation",
+    description: "Providing guidance on proper glasses selection",
   },
-  {
-    id: 5,
-    image: '/5.webp',
-    title: 'Document Review',
-    description: 'Community member testing glasses by reading documents',
-  },
+
   {
     id: 6,
-    image: '/6.webp',
-    title: 'Glasses Presentation',
-    description: 'Demonstrating glasses features to attendees',
+    image: "/6.webp",
+    title: "Glasses Presentation",
+    description: "Demonstrating glasses features to attendees",
   },
   {
     id: 7,
-    image: '/7.webp',
-    title: 'Large Community Gathering',
-    description: 'Wide turnout of teachers and community members',
+    image: "/7.webp",
+    title: "Large Community Gathering",
+    description: "Wide turnout of teachers and community members",
   },
   {
     id: 8,
-    image: '/8.webp',
-    title: 'Group Distribution Session',
-    description: 'Community-wide glasses distribution event',
-  },
-  {
-    id: 9,
-    image: '/9.webp',
-    title: 'Reading Assessment',
-    description: 'Testing vision improvement with reading materials',
-  },
-  {
-    id: 10,
-    image: '/10.webp',
-    title: 'Vision Testing Session',
-    description: 'Conducting comprehensive eye examinations',
+    image: "/8.webp",
+    title: "Group Distribution Session",
+    description: "Community-wide glasses distribution event",
   },
   {
     id: 11,
-    image: '/11.webp',
-    title: 'Community Member Testing',
-    description: 'Individual consultation and glasses fitting',
+    image: "/11.webp",
+    title: "Community Member Testing",
+    description: "Individual consultation and glasses fitting",
   },
-  {
-    id: 12,
-    image: '/12.webp',
-    title: 'Final Reading Test',
-    description: 'Verifying reading ability with new glasses',
-  },
-])
+]);
 
 onMounted(() => {
   inView(
-    '.events-masonry',
+    ".events-grid",
     () => {
       animate(
-        '.event-card',
+        ".event-card",
         {
           opacity: 1,
           y: [30, 0],
@@ -92,14 +69,14 @@ onMounted(() => {
           delay: stagger(0.1),
           duration: 0.6,
           easing: [0.17, 0.55, 0.55, 1],
-        },
-      )
+        }
+      );
     },
     {
       amount: 0.2,
-    },
-  )
-})
+    }
+  );
+});
 </script>
 
 <template>
@@ -113,23 +90,30 @@ onMounted(() => {
           Recent Events
         </h2>
         <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-          Documenting our recent initiative of donating reading glasses to teachers and community
-          members, bringing vision and hope to those in need.
+          Documenting our recent initiative of donating reading glasses to teachers and
+          community members, bringing vision and hope to those in need.
         </p>
       </div>
 
-      <!-- Masonry Layout -->
-      <div class="events-masonry">
+      <!-- Grid Layout -->
+      <div class="events-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
           v-for="event in events"
           :key="event.id"
-          class="event-card opacity-0 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white mb-4"
+          class="event-card opacity-0 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white"
+          :class="{
+            'sm:col-span-1 sm:row-span-1': event.id % 7 === 1 || event.id % 7 === 3,
+            'sm:col-span-1 sm:row-span-2': event.id % 7 === 2,
+            'sm:col-span-1 sm:row-span-1': event.id % 7 === 4 || event.id % 7 === 5,
+            'sm:col-span-1 sm:row-span-2': event.id % 7 === 6,
+            'sm:col-span-1 sm:row-span-1': event.id % 7 === 0,
+          }"
         >
-          <div class="relative overflow-hidden">
+          <div class="relative w-full h-full overflow-hidden">
             <img
               :src="event.image"
               :alt="event.title"
-              class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
             <!-- Overlay on hover -->
@@ -146,8 +130,8 @@ onMounted(() => {
       <!-- Call to Action -->
       <div class="text-center mt-12">
         <p class="text-gray-600 mb-6">
-          Want to make a difference? Support our mission to provide reading glasses to those in
-          need.
+          Want to make a difference? Support our mission to provide reading glasses to
+          those in need.
         </p>
         <router-link
           to="/donation"
@@ -161,36 +145,29 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* Masonry layout using CSS columns */
-.events-masonry {
-  column-count: 1;
-  column-gap: 1rem;
+/* Fixed grid layout with controlled heights */
+.events-grid {
+  grid-auto-rows: 200px;
 }
 
 @media (min-width: 640px) {
-  .events-masonry {
-    column-count: 2;
+  .events-grid {
+    grid-auto-rows: 220px;
   }
 }
 
 @media (min-width: 1024px) {
-  .events-masonry {
-    column-count: 3;
+  .events-grid {
+    grid-auto-rows: 240px;
   }
 }
 
-@media (min-width: 1280px) {
-  .events-masonry {
-    column-count: 4;
-  }
+.event-card {
+  min-height: 200px;
 }
 
-.events-masonry .event-card {
-  break-inside: avoid;
-  page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 1rem;
+.event-card img {
+  min-height: 100%;
+  object-fit: cover;
 }
 </style>

@@ -88,14 +88,13 @@ watch(isSidebarOpen, (open) => {
         <RouterLink
           :to="{ name: 'Donate' }"
           @click="toggleSidebar"
-          class="bg-accentGold mx-auto mt-8 flex items-center hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
+          class="bg-accentGold mx-auto mt-8 flex translate-x-4 items-center hover:bg-accentGold/80 cursor-pointer w-fit px-3 py-1 text-white rounded-md"
         >
           Donate Us
         </RouterLink>
         <div class="ml-6 mt-16">
           <h2 class="text-accentGray font-bold">CONTACT INFO</h2>
           <p class="font-light mt-2">Ayder Sub-city,</p>
-          <p class="font-light">EthioWitten Street,</p>
           <p class="font-light">Mekelle, Ethiopia</p>
         </div>
       </div>

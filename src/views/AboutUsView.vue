@@ -24,11 +24,8 @@ onMounted(() => {
 
       <!-- Glasses Image -->
       <div class="flex justify-center">
-        <img
-          src="/public/aboutUsGlasses.png"
-          alt="Reading glasses"
-          class="w-96 md:w-[500px] lg:w-[600px] object-contain"
-        />
+        <img src="/public/aboutUsGlasses.png" alt="Reading glasses"
+          class="w-96 md:w-[500px] lg:w-[600px] object-contain" />
       </div>
     </div>
   </div>
@@ -46,11 +43,7 @@ onMounted(() => {
         </p>
       </div>
       <div class="flex-1 order-1 md:order-1">
-        <img
-          src="/public/whyVisionImage.avif"
-          alt="Community outreach"
-          class="w-full rounded-lg shadow-lg"
-        />
+        <img src="/public/whyVisionImage.avif" alt="Community outreach" class="w-full rounded-lg shadow-lg" />
       </div>
     </div>
   </div>
@@ -71,30 +64,21 @@ onMounted(() => {
 
         <!-- Pilot Launched -->
         <div class="flex flex-col items-center text-center flex-1 relative z-10">
-          <div
-            class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative"
-          >
+          <div class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative">
             <div class="absolute inset-1 bg-accentBlue rounded-full"></div>
           </div>
-          <div
-            class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]"
-          >
+          <div class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]">
             Pilot Launched
           </div>
-          0
           <p class="text-gray-700 text-sm max-w-[140px]">Started in Tigray region</p>
         </div>
 
         <!-- Founded -->
         <div class="flex flex-col items-center text-center flex-1 relative z-10">
-          <div
-            class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative"
-          >
+          <div class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative">
             <div class="absolute inset-1 bg-accentBlue rounded-full"></div>
           </div>
-          <div
-            class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]"
-          >
+          <div class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]">
             Founded
           </div>
           <p class="text-gray-700 text-sm max-w-[140px]">Inspired by vision need in Ethiopia</p>
@@ -102,94 +86,132 @@ onMounted(() => {
 
         <!-- Validated by D-Prize -->
         <div class="flex flex-col items-center text-center flex-1 relative z-10">
-          <div
-            class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative"
-          >
+          <div class="w-8 h-8 bg-accentBlue rounded-full mb-4 border-4 border-blue-300 shadow-lg relative">
             <div class="absolute inset-1 bg-accentBlue rounded-full"></div>
           </div>
-          <div
-            class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]"
-          >
+          <div class="bg-accentBlue text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]">
             Validated by D-Prize
           </div>
           <p class="text-gray-700 text-sm max-w-[140px]">Recognition and support</p>
         </div>
 
         <div class="flex flex-col items-center text-center flex-1 relative z-10">
-          <div
-            class="w-8 h-8 bg-accentGold rounded-full mb-4 border-4 border-yellow-300 shadow-lg relative"
-          >
+          <div class="w-8 h-8 bg-accentGold rounded-full mb-4 border-4 border-yellow-300 shadow-lg relative">
             <div class="absolute inset-1 bg-accentGold rounded-full"></div>
           </div>
-          <div
-            class="bg-accentGold text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]"
-          >
+          <div class="bg-accentGold text-white px-6 py-3 rounded-full text-sm font-medium mb-3 min-w-[140px]">
             Current
           </div>
           <p class="text-gray-700 text-sm max-w-[140px]">Scaling with partners and impact</p>
         </div>
       </div>
+
+      <!-- Team Section -->
       <div class="py-10 mt-24 md:py-16 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-20">
-            <h2 class="text-2xl md:text-4xl font-bold text-accentBlue mb-8">
-              <span class="text-accentGold">|</span> Meet our team
+          <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-accentBlue mb-4">
+              <span class="text-accentGold">|</span> The ClearSight Team
               <span class="text-accentGold">|</span>
             </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto text-sm md:text-base">
+              ClearSight is led by a multidisciplinary founding team combining clinical leadership,
+              public health expertise, community trust, and financial governance.
+            </p>
           </div>
 
           <!-- Team Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
-            <!-- Dr. Araya Yirga Asgedo -->
-            <div class="flex flex-col items-center text-center">
-              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
-                <img
-                  src="/public/Araya.jpg"
-                  alt="Dr. Araya Yirga Asgedo"
-                  class="w-full h-full object-cover"
-                />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Dr. Araya Yirga Asgedom -->
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:shadow-accentGold/50 transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0">
+                  <img src="/public/Araya.jpg" alt="Dr. Araya Yirga Asgedom" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h3 class="text-lg md:text-xl font-bold text-accentBlue mb-1">
+                    Dr. Araya Yirga Asgedom, MD
+                  </h3>
+                  <p class="text-accentGold font-semibold text-sm md:text-base">
+                    Founder & Executive Lead
+                  </p>
+                </div>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Araya Yirga</h3>
-              <p class="text-blue-600 text-sm font-medium">Founder</p>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                Internist and public health leader with 14+ years' experience. Former Director of
+                Regional Public Health Services, where he mobilized over USD 1 million for
+                post-conflict health system recovery in Tigray. Leads ClearSight's strategy,
+                partnerships, and impact evaluation.
+              </p>
             </div>
 
-            <!-- Sir Mulu Tekie -->
-            <div class="flex flex-col items-center text-center">
-              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
-                <img
-                  src="/public/Mulu.jpg"
-                  alt="Sir Mulu Tekie"
-                  class="w-full h-full object-cover"
-                />
+            <!-- Mr. Assefa Berhe -->
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl 
+hover:shadow-accentGold/50  transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0">
+                  <img src="/public/Assefa.jpg" alt="Mr. Assefa Berhe" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h3 class="text-lg md:text-xl font-bold text-accentBlue mb-1">
+                    Mr. Assefa Berhe, MA
+                  </h3>
+                  <p class="text-accentGold font-semibold text-sm md:text-base">
+                    Community & Education Lead
+                  </p>
+                </div>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Sir Mulu Tekie</h3>
-              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                Veteran educator with 30+ years of experience and former head of the Tigray Regional
+                Teachers' Association. Nationally recognized author and recipient of Ethiopia's
+                Lifetime Teaching Award (2004). Anchors community engagement and trust.
+              </p>
+            </div>
+
+            <!-- Mr. Mulu Tekie -->
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl 
+hover:shadow-accentGold/50  transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0">
+                  <img src="/public/Mulu.jpg" alt="Mr. Mulu Tekie" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h3 class="text-lg md:text-xl font-bold text-accentBlue mb-1">
+                    Mr. Mulu Tekie, BA, MA
+                  </h3>
+                  <p class="text-accentGold font-semibold text-sm md:text-base">
+                    Programs Director
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                Eye-care and public health specialist with expertise in Ophthalmic Nursing and
+                Public Health M&E. Program Director at Moms for Moms (NGO). Oversees screening
+                quality, training, and monitoring systems.
+              </p>
             </div>
 
             <!-- Dr. Bereket Zeray -->
-            <div class="flex flex-col items-center text-center">
-              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
-                <img
-                  src="/public/Bereket.jpg"
-                  alt="Dr. Bereket Zeray"
-                  class="w-full h-full object-cover"
-                />
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl 
+hover:shadow-accentGold/50  transition-shadow">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0">
+                  <img src="/public/Bereket.jpg" alt="Dr. Bereket Zeray" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h3 class="text-lg md:text-xl font-bold text-accentBlue mb-1">
+                    Dr. Bereket Zeray, PhD
+                  </h3>
+                  <p class="text-accentGold font-semibold text-sm md:text-base">
+                    Finance & Governance Advisor
+                  </p>
+                </div>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Dr. Bereket Zeray</h3>
-              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
-            </div>
-
-            <!-- Tr. Assefa Berhe -->
-            <div class="flex flex-col items-center text-center">
-              <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-4">
-                <img
-                  src="/public/Assefa.jpg"
-                  alt="Tr. Assefa Berhe"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-1">Tr. Assefa Berhe</h3>
-              <p class="text-blue-600 text-sm font-medium">Co-Founder</p>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                Professor of Accounting and Financial Management, peer-reviewed author, and advisor
+                to the Tigray Regional Development Bank. Provides financial oversight and
+                sustainability modeling.
+              </p>
             </div>
           </div>
         </div>
@@ -209,16 +231,12 @@ onMounted(() => {
         <div class="h-18 w-4 bg-accentGold hidden md:block"></div>
       </div>
       <div class="flex flex-col gap-3 w-full max-w-md mx-auto">
-        <RouterLink
-          :to="{ name: 'Donate' }"
-          class="cursor-pointer text-center bg-accentGold text-accentBlue font-semibold text-lg py-2 rounded-md w-full transition hover:bg-yellow-400"
-        >
+        <RouterLink :to="{ name: 'Donate' }"
+          class="cursor-pointer text-center bg-accentGold text-accentBlue font-semibold text-lg py-2 rounded-md w-full transition hover:bg-yellow-400">
           Donate
         </RouterLink>
-        <RouterLink
-          :to="{ name: 'Contact' }"
-          class="cursor-pointer text-center border border-white text-white font-medium text-lg py-2 rounded-md w-full transition hover:bg-white hover:text-accentBlue"
-        >
+        <RouterLink :to="{ name: 'Contact' }"
+          class="cursor-pointer text-center border border-white text-white font-medium text-lg py-2 rounded-md w-full transition hover:bg-white hover:text-accentBlue">
           Partner With Us
         </RouterLink>
       </div>

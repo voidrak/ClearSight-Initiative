@@ -57,6 +57,30 @@ onMounted(() => {
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
+              d="M16 12a4 4 0 01-8 0m8 0V8a4 4 0 10-8 0v4m8 0v4a4 4 0 01-8 0v-4"
+            ></path>
+          </svg>
+          <div class="break-words min-w-0 flex-1">
+            <span class="font-semibold text-accentBlue">Email:</span>
+            <a
+              href="mailto:clearSight2017@gmail.com"
+              class="ml-1 hover:underline text-blue-600 break-all"
+            >
+              clearSight2017@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <svg
+            class="w-7 h-7 text-accentGold flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
               d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 8a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm8-8a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 8a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
             ></path>
           </svg>
@@ -82,7 +106,7 @@ onMounted(() => {
           </svg>
           <div class="break-words min-w-0 flex-1">
             <span class="font-semibold text-accentBlue">Address:</span>
-            Ayder Sub-city, Ethiovitian Street, Mekelle, Ethiopia
+            Ayder Sub-city, Mekelle, Ethiopia
           </div>
         </div>
       </div>
