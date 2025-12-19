@@ -116,7 +116,7 @@ onMounted(() => {
           </div>
 
           <!-- Bank of Abyssinia -->
-          <div class="bg-accentBlue rounded-xl col-span-2 flex items-center  flex-col p-4 sm:p-6 text-white shadow-lg">
+          <div class="bg-accentBlue rounded-xl md:col-span-2 flex items-center  flex-col p-4 sm:p-6 text-white shadow-lg">
             <h3 class="font-bold text-lg sm:text-xl mb-3">Global Donations</h3>
             <div class="space-y-1 sm:space-y-2">
               <p class="text-sm sm:text-base">Fiscal Sponsor: D-Prize (U.S. 501(c)(3))</p>
