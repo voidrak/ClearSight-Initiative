@@ -1,5 +1,14 @@
 <script setup>
+import { useSeo } from '@/composables/useSeo'
 import { onMounted } from 'vue'
+
+// Example: Override only description, keep other fields from route meta
+useSeo({
+  description:
+    'Have questions? Want to get involved? Contact ClearSight Initiative today. We welcome partnerships, volunteers, and supporters committed to improving vision care.',
+  // title and keywords will use route meta values
+  // canonical URL is auto-generated
+})
 
 onMounted(() => {
   window.scrollTo(0, 0)

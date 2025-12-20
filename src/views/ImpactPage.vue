@@ -1,4 +1,6 @@
 <script setup>
+import { useSeo } from '@/composables/useSeo'
+import { useSchema } from '@/composables/useSchema'
 import { onMounted } from 'vue'
 import { animate, stagger, inView } from 'motion-v'
 import KpiGrid from '@/components/metrics/KpiGrid.vue'
@@ -7,6 +9,56 @@ import GenderPieChart from '@/components/charts/GenderPieChart.vue'
 import ChannelBarChart from '@/components/charts/ChannelBarChart.vue'
 import AgeDistributionChart from '@/components/charts/AgeDistributionChart.vue'
 import Timeline from '@/components/Timeline/Timeline.vue'
+
+// Enhanced SEO for Impact page
+useSeo({
+  title: 'Our Impact',
+  description:
+    'Discover the impact of ClearSight Initiative. See how we are transforming lives through vision care services and eye health programs with measurable results.',
+  keywords: 'impact, results, success stories, vision care impact, community health outcomes, metrics',
+})
+
+// Add Metric schema to highlight impact data
+useSchema({
+  type: 'metric',
+  data: {
+    name: 'ClearSight Initiative Impact Report',
+    description:
+      'Key metrics and results from our vision care programs in underserved communities across Ethiopia',
+    metrics: [
+      {
+        name: 'People Screened',
+        value: 5000,
+        unit: 'individuals',
+        description: 'Total number of people screened for vision problems',
+      },
+      {
+        name: 'Glasses Distributed',
+        value: 3200,
+        unit: 'pairs',
+        description: 'Reading and prescription glasses provided to community members',
+      },
+      {
+        name: 'Communities Served',
+        value: 25,
+        unit: 'locations',
+        description: 'Underserved communities reached with vision care services',
+      },
+      {
+        name: 'Volunteers Engaged',
+        value: 150,
+        unit: 'volunteers',
+        description: 'Dedicated volunteers supporting our mission',
+      },
+      {
+        name: 'Lives Transformed',
+        value: 2800,
+        unit: 'individuals',
+        description: 'People whose lives were improved through better vision',
+      },
+    ],
+  },
+})
 
 onMounted(() => {
   window.scrollTo(0, 0)

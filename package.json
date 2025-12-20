@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "prebuild": "npm run generate:sitemap"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@vueuse/head": "^2.0.0",
     "chart.js": "^4.5.1",
     "motion-v": "^1.6.1",
     "tailwindcss": "^4.1.11",

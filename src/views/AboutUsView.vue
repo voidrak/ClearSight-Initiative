@@ -1,5 +1,24 @@
 <script setup>
+import { useSchema } from '@/composables/useSchema'
 import { onMounted } from 'vue'
+
+// SEO for this page is handled by route meta fields (fallback example)
+// No useSeo() call needed - will use route.meta from router config
+
+// Add Article schema for "About Us" content page
+useSchema({
+  type: 'article',
+  data: {
+    headline: 'About ClearSight Initiative - Our Mission and Vision',
+    description:
+      'Learn about ClearSight Initiative, our mission to bring sight, dignity, and opportunity to underserved communities across Ethiopia through accessible vision care.',
+    url: ' https://clearsightinitiative.org/about', 
+    datePublished: '2025-01-01T00:00:00Z', 
+    dateModified: new Date().toISOString(),
+    author: 'ClearSight Initiative',
+    image: '/public/aboutUsGlasses.png',
+  },
+})
 
 onMounted(() => {
   window.scrollTo(0, 0)
